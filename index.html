@@ -6,13 +6,25 @@
     <title>Trade With Munaf</title>
     
     <script>
-      // Yaha apna Meta Pixel Code paste karein
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '27187832194150977');
+    fbq('track', 'PageView');
     </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=27187832194150977&ev=PageView&noscript=1"
+    /></noscript>
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: url('https://images.unsplash.com/photo-1611974714158-f8999f1b7944?auto=format&fit=crop&q=80') no-repeat center center fixed;
             background-size: cover;
             height: 100vh;
@@ -21,10 +33,11 @@
             align-items: center;
             color: white;
             text-align: center;
+            overflow: hidden;
         }
 
         .overlay {
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.75);
             width: 100%;
             height: 100%;
             display: flex;
@@ -35,65 +48,74 @@
         }
 
         .profile-pic {
-            width: 120px;
-            height: 120px;
-            background: white;
+            width: 130px;
+            height: 130px;
+            background: #fff;
             border-radius: 50%;
-            border: 4px solid #f1c40f;
+            border: 5px solid #ffcc00;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 15px;
-            box-shadow: 0 0 20px #f1c40f;
+            margin-bottom: 20px;
+            box-shadow: 0 0 25px rgba(255, 204, 0, 0.6);
         }
 
         .profile-pic span {
-            color: black;
-            font-weight: bold;
-            font-size: 14px;
-            text-align: center;
+            color: #000;
+            font-weight: 900;
+            font-size: 16px;
+            text-transform: uppercase;
+            line-height: 1.2;
         }
 
         h2 {
-            color: #f1c40f;
-            font-size: 1.5rem;
+            color: #ffcc00;
+            font-size: 1.6rem;
             margin: 10px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
 
         .btn-telegram {
             background: #0088cc;
             color: white;
-            padding: 15px 40px;
-            border-radius: 10px;
+            padding: 18px 45px;
+            border-radius: 50px;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.2rem;
-            margin: 20px 0;
+            font-size: 1.3rem;
+            margin: 25px 0;
             display: inline-block;
-            animation: blink 1s infinite;
+            box-shadow: 0 4px 15px rgba(0, 136, 204, 0.4);
+            animation: pulse-red 1.2s infinite;
             border: none;
             cursor: pointer;
         }
 
-        @keyframes blink {
-            0% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.7; transform: scale(1.05); }
-            100% { opacity: 1; transform: scale(1); }
+        @keyframes pulse-red {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 136, 204, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(0, 136, 204, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 136, 204, 0); }
         }
 
         .tagline {
-            background: white;
-            color: red;
-            padding: 5px 15px;
-            font-weight: bold;
+            background: #ffffff;
+            color: #d90000;
+            padding: 8px 20px;
+            font-weight: 800;
             border-radius: 5px;
-            margin: 10px 0;
+            margin: 15px 0;
+            display: inline-block;
         }
 
         .info-text {
-            font-size: 0.9rem;
-            line-height: 1.6;
-            max-width: 300px;
+            font-size: 1rem;
+            line-height: 1.8;
+            font-weight: 500;
+        }
+
+        .money-bag {
+            font-size: 1.2rem;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -104,31 +126,41 @@
         <span>Trade With<br>Munaf</span>
     </div>
 
-    <h2>💥 DAILY FREE DEMO CALL 💥<br>Trade With Munaf™</h2>
+    <h2>🌟 DAILY FREE DEMO CALL 🌟<br>Trade With Munaf™</h2>
 
     <a href="https://t.me/+WIi2hGzsTJoyYTk1" class="btn-telegram" id="tgLink">
         📩 JOIN ON TELEGRAM
     </a>
 
-    <p>NIFTY • BANKNIFTY • STOCK OPTIONS ⚡</p>
+    <p style="font-weight: bold; letter-spacing: 1px;">NIFTY • BANKNIFTY • STOCK OPTIONS ⚡</p>
 
     <div class="tagline">India's Best STOCK MARKET Channel</div>
 
     <div class="info-text">
         All Calls With Proper Stop Loss & Target<br>
-        We Provide F&O Views For Study Purpose Only<br><br>
+        We Provide F&O Views For Study Purpose Only
+    </div>
+    
+    <div class="money-bag">
         💰 Daily 5-7 Calls By Our Expert 💰
     </div>
 </div>
 
 <script>
-    // Simple Anti-Bot: Button 1.5 seconds baad hi active hoga
+    // Antibot + Pixel Tracking Fix
     document.getElementById('tgLink').onclick = function(e) {
-        let loadTime = performance.now();
-        if (loadTime < 1500) {
-            e.preventDefault();
-            console.log("Too fast - potential bot/fake click.");
+        e.preventDefault(); // Pehle redirect roko
+        let url = this.getAttribute('href');
+        
+        // Pixel track (Optional: Custom event for click)
+        if(typeof fbq !== 'undefined') {
+            fbq('track', 'Contact'); 
         }
+
+        // 500ms ka delay taaki Pixel load ho jaye aur bots filter ho sakein
+        setTimeout(function(){
+            window.location.href = url;
+        }, 500);
     };
 </script>
 

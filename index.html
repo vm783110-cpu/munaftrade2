@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trade With Munaf</title>
-    
+    <title>TradeWithMunaaf</title>
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -25,144 +24,110 @@
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: url('https://images.unsplash.com/photo-1611974714158-f8999f1b7944?auto=format&fit=crop&q=80') no-repeat center center fixed;
-            background-size: cover;
+            background: linear-gradient(180deg, #050a30 0%, #000c66 50%, #7ec8e3 100%);
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
             text-align: center;
-            overflow: hidden;
         }
 
-        .overlay {
-            background: rgba(0, 0, 0, 0.75);
+        .card {
+            background-color: #111827;
+            width: 90%;
+            max-width: 400px;
+            padding: 40px 20px;
+            border-radius: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .logo-container {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: #fff; /* Pehle background white tha, ab black card par white circle effect dega */
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Image bahar na nikle */
+        }
+
+        .logo-container img {
             width: 100%;
             height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .profile-pic {
-            width: 130px;
-            height: 130px;
-            background: #fff;
+            object-fit: cover; /* Image automatically circle mein fit ho jayegi */
             border-radius: 50%;
-            border: 5px solid #ffcc00;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 20px;
-            box-shadow: 0 0 25px rgba(255, 204, 0, 0.6);
         }
 
-        .profile-pic span {
-            color: #000;
-            font-weight: 900;
+        h1 {
+            font-size: 24px;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .info-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
             font-size: 16px;
-            text-transform: uppercase;
-            line-height: 1.2;
+            line-height: 2;
         }
 
-        h2 {
-            color: #ffcc00;
-            font-size: 1.6rem;
-            margin: 10px 0;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-
-        .btn-telegram {
-            background: #0088cc;
-            color: white;
-            padding: 18px 45px;
-            border-radius: 50px;
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(90deg, #7cf0e5, #49dcb1);
+            color: #000;
             text-decoration: none;
+            padding: 15px;
+            border-radius: 40px;
             font-weight: bold;
-            font-size: 1.3rem;
-            margin: 25px 0;
-            display: inline-block;
-            box-shadow: 0 4px 15px rgba(0, 136, 204, 0.4);
-            animation: pulse-red 1.2s infinite;
-            border: none;
-            cursor: pointer;
+            font-size: 20px;
+            margin-bottom: 25px;
+            gap: 10px;
         }
 
-        @keyframes pulse-red {
-            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 136, 204, 0.7); }
-            70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(0, 136, 204, 0); }
-            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 136, 204, 0); }
+        .footer-text {
+            font-size: 13px;
+            color: #9ca3af;
         }
 
-        .tagline {
-            background: #ffffff;
-            color: #d90000;
-            padding: 8px 20px;
-            font-weight: 800;
-            border-radius: 5px;
-            margin: 15px 0;
-            display: inline-block;
-        }
-
-        .info-text {
-            font-size: 1rem;
-            line-height: 1.8;
-            font-weight: 500;
-        }
-
-        .money-bag {
-            font-size: 1.2rem;
-            margin-top: 10px;
+        .footer-text a {
+            color: #49dcb1;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
 
-<div class="overlay">
-    <div class="profile-pic">
-        <span>Trade With<br>Munaf</span>
+<div class="card">
+    <div class="logo-container">
+        <img src="logo.png" alt="Logo">
     </div>
 
-    <h2>🌟 DAILY FREE DEMO CALL 🌟<br>Trade With Munaf™</h2>
+    <h1>TradeWithMunaaf₹</h1>
 
-    <a href="https://t.me/+WIi2hGzsTJoyYTk1" class="btn-telegram" id="tgLink">
-        📩 JOIN ON TELEGRAM
+    <div class="info-list">
+        <div>📊 NIFTY · BANKNIFTY · SENSEX</div>
+        <div>✅ DAILY CALLS AVAILABLE</div>
+        <div>⭐ 95% Accuracy</div>
+        <div>🎯 6+ Years Experience</div>
+    </div>
+
+    <a href="https://t.me/+WIi2hGzsTJoyYTk1" class="btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="25" alt="TG Logo">
+        Join Telegram
     </a>
 
-    <p style="font-weight: bold; letter-spacing: 1px;">NIFTY • BANKNIFTY • STOCK OPTIONS ⚡</p>
-
-    <div class="tagline">India's Best STOCK MARKET Channel</div>
-
-    <div class="info-text">
-        All Calls With Proper Stop Loss & Target<br>
-        We Provide F&O Views For Study Purpose Only
-    </div>
-    
-    <div class="money-bag">
-        💰 Daily 5-7 Calls By Our Expert 💰
+    <div class="footer-text">
+        Contact Only For Ads Setup 👑<br>
+        Ads Managed By <a href="https://t.me/+jE7sEbzR23gwM2U1">Kunal</a>
     </div>
 </div>
-
-<script>
-    // Antibot + Pixel Tracking Fix
-    document.getElementById('tgLink').onclick = function(e) {
-        e.preventDefault(); // Pehle redirect roko
-        let url = this.getAttribute('href');
-        
-        // Pixel track (Optional: Custom event for click)
-        if(typeof fbq !== 'undefined') {
-            fbq('track', 'Contact'); 
-        }
-
-        // 500ms ka delay taaki Pixel load ho jaye aur bots filter ho sakein
-        setTimeout(function(){
-            window.location.href = url;
-        }, 500);
-    };
-</script>
 
 </body>
 </html>

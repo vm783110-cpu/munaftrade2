@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3point_traders</title>
+    
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -13,11 +14,16 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1321364243223463');
+    fbq('init', '1443031657510112');
     fbq('track', 'PageView');
+
+    // Function to track Lead when button is clicked
+    function trackLead() {
+        fbq('track', 'Lead');
+    }
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1321364243223463&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=1443031657510112&ev=PageView&noscript=1"
     /></noscript>
     <style>
         body {
@@ -96,16 +102,16 @@
             font-size: 20px;
             margin-bottom: 25px;
             gap: 10px;
+            transition: transform 0.2s;
+        }
+
+        .btn:active {
+            transform: scale(0.95);
         }
 
         .footer-text {
             font-size: 13px;
             color: #9ca3af;
-        }
-
-        .footer-text a {
-            color: #49dcb1;
-            text-decoration: none;
         }
     </style>
 </head>
@@ -126,13 +132,14 @@
         <div>| Learn | Practice | Earn |</div>
     </div>
 
-    <a href="https://t.me/+WIi2hGzsTJoyYTk1" class="btn">
+    <a href="https://t.me/+WIi2hGzsTJoyYTk1" onclick="trackLead()" class="btn">
         <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="25" alt="TG Logo">
         Join Telegram
     </a>
 
     <div class="footer-text">
-        
+        &copy; 2026 Day Trader | Managed by Kunal
+    </div>
 </div>
 
 </body>
